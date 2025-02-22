@@ -1,0 +1,161 @@
+{
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Grub",
+    "config_version": "3.0.2",
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "cd085161-a5fd-47d4-a379-c79b53da3065",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 3
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "d2d48a7d-f6a7-492a-aea0-dbd5ef5a72eb",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 32
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1076887552
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/home",
+                        "obj_id": "dad8321e-fbf7-40be-9874-b49c5cbd4711",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 71937556480
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 35436625920
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "disk_encryption": null,
+    "hostname": "archworld",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "jp106",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "Japan": [
+                "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch",
+                "https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch",
+                "http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch",
+                "http://jp.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://mirrors.cat.net/archlinux/$repo/os/$arch",
+                "https://mirrors.cat.net/archlinux/$repo/os/$arch",
+                "http://mirror.nishi.network/archlinux/$repo/os/$arch",
+                "https://mirror.nishi.network/archlinux/$repo/os/$arch",
+                "http://repo.jing.rocks/archlinux/$repo/os/$arch",
+                "https://repo.jing.rocks/archlinux/$repo/os/$arch",
+                "http://www.miraa.jp/archlinux/$repo/os/$arch",
+                "https://www.miraa.jp/archlinux/$repo/os/$arch",
+                "http://mirror.aria-on-the-planet.es/archlinux/$repo/os/$arch",
+                "https://mirror.aria-on-the-planet.es/archlinux/$repo/os/$arch",
+                "http://mirror.hashy0917.net/archlinux/$repo/os/$arch",
+                "https://mirror.hashy0917.net/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "type": "iso"
+    },
+    "ntp": true,
+    "packages": [],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {}
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "save_config": null,
+    "swap": true,
+    "timezone": "Japan",
+    "uki": false,
+    "version": "3.0.2"
+}
